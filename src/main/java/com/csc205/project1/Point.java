@@ -1,8 +1,7 @@
 package com.csc205.project1;
 
 /*
-Design & implement a class called Point that represents a location in the Cartesian plane.
-
+Prompt: Design & implement a class called Point that represents a location in the Cartesian plane.
  */
 public class Point {
     private double x;
@@ -43,7 +42,7 @@ public class Point {
         this.x += n;
     }
 
-    //Shift point along 7-axis.
+    //Shift point along y-axis.
     public void shiftY(double n) {
         this.y += n;
     }
@@ -60,5 +59,14 @@ public class Point {
         this.x = newX;
         this.y = newY;
 
+    }
+    /*
+    Prompt: make a to string method for point.java
+     */
+
+    // toString method
+    @Override
+    public String toString() {
+        return "Point(" + "x=" + x + ", y=" + y + ')';
     }
 }
